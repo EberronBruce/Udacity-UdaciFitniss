@@ -142,7 +142,7 @@ export function getMetricMetaInfo (metric) {
     },
   }
 
-  return type metric === 'undefined'
+  return typeof metric === 'undefined'
     ? info
     : info[metric]
 }
